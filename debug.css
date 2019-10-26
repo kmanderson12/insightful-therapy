@@ -1,0 +1,82 @@
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items:  center;
+}
+
+.home-btn {
+  float: left;
+  padding: 0;
+  margin: 0 2.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+html, body {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #faf4ec;
+}
+
+.is-offwhite {
+  background-color: #faf4ec;
+}
+
+.is-olivegreen {
+  background-color: #abb98d;
+}
+
+.hero-image {
+  height: 15em;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.img-responsive {
+  display: block; 
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.is-mont {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.is-mont-p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  width: 6em;
+  display: block;
+  height: 2px;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-width: 2px 0px 0px;
+  border-image: initial;
+  border-top: 2px solid #abb98d; /*Olive Green*/
+  margin: 2rem 0px;
+}
+
+.about {
+  margin: 0 3.5em;
+}
+
+.is-spaced {
+  line-height: 2em;
+}
