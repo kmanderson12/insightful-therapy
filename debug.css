@@ -31,6 +31,10 @@ html, body {
   background-color: #abb98d;
 }
 
+.navbar-item-hover-background-color {
+  background-color: skyblue;
+}
+
 .hero-image {
   height: 15em;
   width: auto;
