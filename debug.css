@@ -31,6 +31,10 @@ html, body {
   background-color: #abb98d;
 }
 
+.is-skyblue {
+  background-color: skyblue;
+}
+
 .navbar-item-hover-background-color {
   background-color: skyblue;
 }
@@ -78,9 +82,22 @@ hr {
 }
 
 .about {
-  margin: 0 3.5em;
+  margin: 0 1.5em;
 }
 
 .is-spaced {
   line-height: 2em;
+}
+
+footer {
+  display: block;
+  background-color: skyblue;
+}
+
+footer p {
+  font-size: .7em;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 1em;
 }
