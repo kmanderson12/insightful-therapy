@@ -1,0 +1,235 @@
+* {
+  /* this adds padding to a box and won't increase the width, but it adds the padding inwards, not outwards. */
+  -webkit-box-sizing: border-box;
+  /* for chrome and safari.  */
+  -moz-box-sizing: border-box;
+  /*for firefox*/
+  box-sizing: border-box;
+  /*for all the other browsers. */
+}
+html,
+body {
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #faf4ec;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 100;
+}
+h2 {
+  font-size: 1.75em;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-size: 1.35em;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}
+h4 {
+  font-size: 1.15em;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}
+h5 {
+  font-size: 1em;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 0.9em;
+  font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  width: 6em;
+  display: block;
+  height: 2px;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-width: 2px 0px 0px;
+  border-image: initial;
+  border-top: 2px solid #abb98d; /*Olive Green*/
+  margin: 2rem 0px;
+}
+
+nav {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+.home-btn {
+  float: left;
+  padding: 0;
+  margin: 0 2.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.home-btn:hover {
+  color: #abb98d;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+li {
+  display: inline;
+  font-size: 0.9em;
+  padding: 1.5em;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: black;
+
+a:hover {
+  color: #abb98d;
+  text-decoration: underline skyblue;
+}
+.nav-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.header-logo img {
+  max-width: 350px;
+  max-height: 350px;
+}
+.hero-image {
+  background-image: url("media/ipft_logo.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.about {
+  margin: 0 3.5em;
+}
+
+.about p {
+  margin: auto;
+  width: 80%;
+  padding: 1em;
+  line-height: 2em;
+}
+
+#about-therapist-section {
+  margin: 0 3.5em;
+}
+
+#about-us {
+  display: flex;
+  margin: 0;
+}
+
+#about-us p {
+  margin: auto;
+  width: 80%;
+}
+
+.bios {
+  display: inline-block;
+  width: 50%;
+}
+
+.bios h5 {
+  color: rgb(54, 52, 52);
+  display: flex;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: auto;
+  text-decoration: underline;
+  width: 40%;
+}
+
+.bios p {
+  line-height: 2em;
+}
+
+#services {
+  margin: auto 3.5em;
+}
+
+#services p {
+  margin: auto;
+  width: 80%;
+  padding: 1em;
+  line-height: 1em;
+}
+
+#services ul {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding-top: 2em;
+}
+
+#services li {
+  display: flex;
+  text-transform: inherit;
+  margin: auto;
+  width: 80%;
+  padding: 1em;
+  line-height: 0.5em;
+}
+
+#contact-us {
+  margin: auto 3.5em;
+}
+
+#contact-us h4 {
+  margin: auto;
+}
+
+.rows {
+  display: flex;
+  justify-content: center;
+  padding-left: 10em;
+}
+
+.contact-info p {
+  width: 25em;
+  line-height: 1.5em;
+}
+
+#insurance {
+  margin: auto 3.5em;
+}
+
+#insurance p {
+  line-height: 2em;
+  margin: auto;
+  width: 80%;
+}
+
+footer {
+  display: block;
+  background-color: skyblue;
+}
+
+footer ul {
+  display: inline;
+  margin: auto;
+  align-content: center;
+}
+
+footer p {
+  font-size: 0.7em;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 1em;
+}

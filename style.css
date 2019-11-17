@@ -1,48 +1,120 @@
-* {
-  /* this adds padding to a box and won't increase the width, but it adds the padding inwards, not outwards. */
-  -webkit-box-sizing: border-box;
-  /* for chrome and safari.  */
-  -moz-box-sizing: border-box;
-  /*for firefox*/
-  box-sizing: border-box;
-  /*for all the other browsers. */
-}
-html, body {
-  font-family: 'Cormorant Garamond', serif;
+html,
+body {
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
   background-color: #faf4ec;
-}
-h1 {
-  font-size: 2em;
-  font-weight: 100;
-}  
-h2 {
-  font-size: 1.75em;
-  font-weight: 100;
-  font-family: 'Montserrat', sans-serif;
-} 
-h3 {
-  font-size: 1.35em;
-  font-weight: 100;
-  font-family: 'Montserrat', sans-serif;
-} 
-h4 {
-  font-size: 1.15em;
-  font-weight: 100;
-  font-family: 'Montserrat', sans-serif;
-}
-h5 {
-  font-size: 1em;
-  font-weight: 100;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 
+nav.navbar {
+  background-color: #faf4ec;
+}
+.navbar,
+.navbar-end,
+.navbar-menu,
+.navbar-start {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-container:hover {
+  background: white;
+}
+
+.navbar-menu a {
+  color: #4a4a4a;
+}
+.navbar-item > a {
+  padding: 12px 8px;
+}
+.navbar-item > a:hover {
+  background: white;
+  color: #616950;
+}
+
+.navbar-menu a.navbar-item:hover {
+  color: #616950;
+}
+
+.home-btn {
+  float: left;
+  padding: 0;
+  margin: 0 2.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.is-offwhite {
+  background-color: #faf4ec;
+}
+
+.is-olivegreen {
+  background-color: #abb98d;
+}
+
+.is-skyblue {
+  background-color: skyblue;
+}
+
+.navbar-item-hover-background-color {
+  background-color: skyblue;
+}
+
+.nav-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.header-image {
+  height: 15em;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.hero-body.hero-home {
+  background: url("media/Road\ pic.jpg");
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+}
 
 p {
-  font-size: .9em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.is-mont {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.is-mont-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+hr.header-hr {
+  width: 45%;
+  display: block;
+  height: 1.5px;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-width: 2px 0px 0px;
+  border-image: initial;
+  border-top: 2px solid #abb98d; /*Olive Green*/
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 hr {
@@ -60,166 +132,134 @@ hr {
   border-top: 2px solid #abb98d; /*Olive Green*/
   margin: 2rem 0px;
 }
-
-nav {
-  padding: .5em;
-  margin: .5em;
-}
-.home-btn {
-  float: left;
-  padding: 0;
-  margin: 0 2.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-.home-btn:hover {
-  color: #abb98d;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  float: right;
-}
-li {
-  display: inline;
-  font-size: .9em;
-  padding: 1.5em;
-  text-transform: uppercase;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  color: #abb98d;
-  text-decoration: underline skyblue;
-}
-
-.hero-image {
-  background-image: url("media/ipft_logo.png");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-}
-
-.about {
-  margin: 0 3.5em;
-}
-
-.about p {
-  margin: auto;
-  width: 80%;
-  padding: 1em;
+.is-spaced {
   line-height: 2em;
 }
 
-#about-therapist-section {
-  margin: 0 3.5em;
+.main-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
-#about-us {
-  display: flex;
-  margin: 0;
+.home-content {
+  text-align: center;
+}
+.olive-btn {
+  background: #abb98d;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  border-radius: none;
 }
 
-#about-us p {
-  margin: auto;
-  width: 80%;
+.content-btn {
+  margin: 1rem auto;
+}
+.banner-btn {
+  margin: 0.2rem auto;
 }
 
-.bios {
-  display: inline-block;
-  width: 50%;
-}
-
-.bios h5 {
-  color: rgb(54, 52, 52);
-  display: flex;
-  font-weight: 400;
-  font-size: 1.2em;
-  margin: auto;
-  text-decoration: underline;
-  width: 40%;
-}
-
-.bios p {
-  line-height: 2em;
-}
-
-#services {
-  margin: auto 3.5em;
-}
-
-#services p {
-  margin: auto;
-  width: 80%;
-  padding: 1em;
-  line-height: 1em;
-}
-
-#services ul {
-  font-family: 'Montserrat', sans-serif;
-  width: 100%;
-  padding-top: 2em;
-}
-
-#services li {
-  display: flex;
-  text-transform: inherit;
-  margin: auto;
-  width: 80%;
-  padding: 1em;
-  line-height: .5em;
-}
-
-#contact-us {
-  margin: auto 3.5em;
-}
-
-#contact-us h4 {
-  margin: auto;
-}
-
-.rows {
+.contact-banner {
+  background: #efefef;
   display: flex;
   justify-content: center;
-  padding-left: 10em;
+  align-items: center;
+  min-height: 70px;
+}
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
 }
 
-.contact-info p {
-  width: 25em;
-  line-height: 1.5em;
-}
-
-#insurance {
-  margin: auto 3.5em;
-}
-
-#insurance p {
-  line-height: 2em;
-  margin: auto;
-  width: 80%;
+.contact-h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  display: inline;
 }
 
 footer {
   display: block;
-  background-color: skyblue;
+  background-color: #abb98d;
 }
 
-footer ul {
-  display: inline;
-  margin: auto;
-  align-content: center;
+.footer-container {
+  padding: 2rem;
+  color: white;
 }
 
-footer p {
-  font-size: .7em;
+footer h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .attribution {
   margin: auto;
-  width: 50%;
   text-align: center;
-  padding: 1em;
+  padding: 0.75em;
+  background: #4a4a4a;
+}
+
+footer .attribution p,
+footer .attribution a {
+  font-size: 12px;
+}
+footer .attribution a:hover {
+  color: #abb98d;
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+  margin: 0.5em 0;
+}
+footer i {
+  color: #4a4a4a;
+}
+.icon {
+  min-width: 20px;
+}
+
+.icon-text {
+  padding-left: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  min-height: 50px;
+}
+
+footer p,
+footer a {
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .olive-btn {
+    font-size: 16px;
+  }
+
+  .contact-h1 {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+
+  footer .attribution p,
+  footer .attribution a {
+    font-size: 10px;
+  }
 }
