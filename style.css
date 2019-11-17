@@ -19,8 +19,8 @@ nav.navbar {
   justify-content: space-between;
 }
 
-.dropdown-container:hover {
-  background: white;
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #616950;
 }
 
 .navbar-menu a {
