@@ -1,3 +1,4 @@
+/* Global Styles */
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -7,7 +8,49 @@ body {
   background-color: #faf4ec;
   box-sizing: border-box;
 }
+/* End Global */
 
+/* Helper Classes */
+.is-spaced {
+  line-height: 2em;
+}
+.is-offwhite {
+  background-color: #faf4ec;
+}
+.is-olivegreen {
+  background-color: #abb98d;
+}
+.is-skyblue {
+  background-color: skyblue;
+}
+.is-mont {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.is-mont-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.olive-btn {
+  background: #abb98d;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  border-radius: none;
+}
+/* End Helper */
+
+/* ---- Template Styles ---- */
+/* Header/Nav */
+.header-image {
+  max-height: 15em;
+  width: auto;
+  margin: auto;
+  display: block;
+}
 nav.navbar {
   background-color: #faf4ec;
 }
@@ -37,69 +80,10 @@ nav.navbar {
 .navbar-menu a.navbar-item:hover {
   color: #616950;
 }
-
-.home-btn {
-  float: left;
-  padding: 0;
-  margin: 0 2.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-.is-offwhite {
-  background-color: #faf4ec;
-}
-
-.is-olivegreen {
-  background-color: #abb98d;
-}
-
-.is-skyblue {
-  background-color: skyblue;
-}
-
-.navbar-item-hover-background-color {
-  background-color: skyblue;
-}
-
 .nav-container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   max-width: 700px;
 }
-
-.header-image {
-  height: 15em;
-  width: auto;
-  margin: auto;
-  display: block;
-}
-
-.hero-body.hero-home {
-  background: url("media/Road\ pic.jpg");
-  background-size: cover;
-  background-position-y: center;
-  text-align: center;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-}
-
-.is-mont {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-
-.is-mont-p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-}
-
 hr.header-hr {
   width: 45%;
   display: block;
@@ -116,52 +100,26 @@ hr.header-hr {
   margin: 0 auto;
   margin-bottom: 1rem;
 }
+/* END Header/Nav */
 
-hr {
-  width: 6em;
-  display: block;
-  height: 2px;
-  border-right-style: initial;
-  border-bottom-style: initial;
-  border-left-style: initial;
-  border-right-color: initial;
-  border-bottom-color: initial;
-  border-left-color: initial;
-  border-width: 2px 0px 0px;
-  border-image: initial;
-  border-top: 2px solid #abb98d; /*Olive Green*/
-  margin: 2rem 0px;
+/* Hero/Body */
+.hero-body.hero-home {
+  background: url("media/Road\ pic.jpg");
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
 }
-.is-spaced {
-  line-height: 2em;
-}
-
 .main-content {
   max-width: 700px;
   margin: 0 auto;
   padding: 1rem 0;
 }
-
-.home-content {
-  text-align: center;
-}
-.olive-btn {
-  background: #abb98d;
-  color: white;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 20px;
-  border: none;
-  border-radius: none;
-}
-
 .content-btn {
   margin: 1rem auto;
 }
-.banner-btn {
-  margin: 0.2rem auto;
-}
+/* END Hero/Body */
 
+/* Contact Banner */
 .contact-banner {
   background: #efefef;
   display: flex;
@@ -175,14 +133,18 @@ hr {
   align-items: center;
   max-width: 700px;
 }
-
-.contact-h1 {
+.contact-content > h1 {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
   display: inline;
 }
+.banner-btn {
+  margin: 0.2rem auto;
+}
+/* END Contact Banner */
 
+/* Footer */
 footer {
   display: block;
   background-color: #abb98d;
@@ -220,9 +182,7 @@ footer .attribution a:hover {
   align-items: center;
   margin: 0.5em 0;
 }
-footer i {
-  color: #4a4a4a;
-}
+
 .icon {
   min-width: 20px;
 }
@@ -242,7 +202,62 @@ footer a {
   font-size: 14px;
   color: white;
 }
+/* END Footer */
+/* ---- END Template Styles ---- */
 
+/* ---- Additional Styles (Styles for Specific Pages)---- */
+
+/* Home Page */
+.home-content {
+  text-align: center;
+}
+/* END Home Page */
+
+/* Misc */
+
+hr {
+  width: 6em;
+  display: block;
+  height: 2px;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-width: 2px 0px 0px;
+  border-image: initial;
+  border-top: 2px solid #abb98d; /*Olive Green*/
+  margin: 2rem 0px;
+}
+/* END Misc */
+/* ---- END Additional  ---- */
+@media (max-width: 1023px) {
+  .navbar-brand {
+    flex-direction: column;
+  }
+  .burger-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+    margin: 0 auto;
+    background: #abb98d;
+    width: 45%;
+    color: white;
+  }
+  .burger-box h1 {
+    margin-left: 10px;
+    font-weight: 300;
+  }
+  .burger-box h1,
+  .burger-box a {
+    display: inline;
+  }
+  hr.header-hr {
+    visibility: hidden;
+  }
+}
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
@@ -252,7 +267,7 @@ footer a {
     font-size: 16px;
   }
 
-  .contact-h1 {
+  .contact-content h1 {
     font-size: 16px;
     text-align: center;
     padding: 0 0.5rem;
@@ -261,5 +276,13 @@ footer a {
   footer .attribution p,
   footer .attribution a {
     font-size: 10px;
+  }
+  .footer-container {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .header-image {
+    max-width: 300px;
   }
 }
