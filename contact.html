@@ -59,26 +59,68 @@
     <section class="hero is-medium is-mont">
       <!-- Hero Image: Create class for each page. Image is in css background.
                 ex: hero-home, hero-about, hero-insurance, etc -->
-      <div class="hero-body hero-home">
+      <div class="hero-body hero-contact">
         <div class="container">
           <h1 class="title">
-            Welcome
+            Contact Us
           </h1>
         </div>
       </div>
     </section>
     <section class="container">
-      <div class="main-content is-mont-p home-content">
-        <p>
-          We are pleased that you have visited our site to find out more about
-          us! We are a private practice facility that is excited to be a part
-          of the community. Being born and raised here in Sparta, we
-          understand the limited resources that we may encounter pertaining to
-          Mental Health needs. With that being said, we wanted to give back to
-          the area and provide a safe, private, and calm venue that is ready
-          to meet all Mental Health and Family Systems needs.
-        </p>
-        <button class="button olive-btn content-btn">Learn More</button>
+      <div class="main-content is-mont-p">
+        <form
+          action="https://formsubmit.co/22511480e446c044ed2ac0555626f64d"
+          method="POST"
+        >
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input
+                class="input"
+                name="name"
+                type="text"
+                required
+                placeholder="Name"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input
+                class="input"
+                name="email"
+                type="email"
+                required
+                placeholder="Email"
+                value=""
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea
+                class="textarea"
+                name="message"
+                required
+                placeholder=""
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <button class="button is-link">Submit</button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
     <!-- END Page-Specific Content -->
@@ -89,7 +131,7 @@
         <h1>
           Contact Us Today To Schedule An Appointment!
         </h1>
-        <button onclick="window.location.href = 'contact.html';" class="button olive-btn banner-btn">Contact Us</button>
+        <button class="button olive-btn banner-btn">Contact Us</button>
       </div>
     </section>
     <div class="container footer-container">
