@@ -68,6 +68,9 @@ body {
   margin: auto;
   display: block;
 }
+a.header-image-link {
+  margin: auto;
+}
 nav.navbar {
   background-color: #faf4ec;
 }
