@@ -280,6 +280,12 @@ footer a {
   text-align: center;
 }
 .hero-body.hero-depression {
+  background-image: url("media/Man.jpg");
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+}
+.hero-body.hero-trauma {
   background-image: url("media/have\ a\ dream.jpg");
   background-size: cover;
   background-position-y: center;
