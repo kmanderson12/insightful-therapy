@@ -236,6 +236,16 @@ footer a {
   text-align: center;
 }
 /* END Contact */
+
+/* About Page */
+.hero-body.hero-contact {
+  background: url("media/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg");
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+}
+
+/* END About */
 /* Misc */
 
 hr {
