@@ -29,11 +29,17 @@ body {
 }
 .is-mont-p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
 }
+.is-mont-h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0.5rem 0;
+}
 .olive-btn {
-  background: #abb98d;
+  background: #97a27f;
   color: white;
   font-family: "Montserrat";
   font-weight: 700;
@@ -45,7 +51,7 @@ body {
   color: #4a4a4a;
 }
 .button.is-link {
-  background-color: #abb98d;
+  background-color: #97a27f;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -122,6 +128,7 @@ hr.header-hr {
 }
 .hero-body .title {
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .main-content {
   max-width: 700px;
@@ -246,22 +253,78 @@ footer a {
 }
 
 /* END About */
+
+/* Insurance Page */
+.hero-body.hero-insurance {
+  background-image: url("media/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg");
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+}
+
+.insurance-list {
+  margin-bottom: 1rem;
+}
+.container-insurance {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* END Insurance */
+/* Issues */
+.hero-body.hero-career {
+  background-image: url("media/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg");
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+}
+.hero-body.hero-depression {
+  background-image: url("media/have\ a\ dream.jpg");
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+}
+.issues-content {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.content-p {
+  margin: 1rem 0;
+  letter-spacing: -0.004em;
+}
+.content-p strong {
+  color: #4a4a4a;
+}
+blockquote.content-quote {
+  text-align: left;
+  padding: 1rem;
+  border-left: 5px solid #97a27f;
+  /* color: #4a4a4a; */
+  font-weight: 300;
+  /* font-style: italic; */
+  background: rgba(171, 185, 141, 0.11);
+}
+.content-quote .quote-author {
+  font-weight: 700;
+  font-style: normal;
+}
+ul.content-list {
+  list-style: inside;
+  text-align: left;
+  padding: 0 1rem;
+  margin-left: 40px;
+}
+/* END Issues */
 /* Misc */
 
 hr {
   width: 6em;
   display: block;
   height: 2px;
-  border-right-style: initial;
-  border-bottom-style: initial;
-  border-left-style: initial;
-  border-right-color: initial;
-  border-bottom-color: initial;
-  border-left-color: initial;
   border-width: 2px 0px 0px;
-  border-image: initial;
   border-top: 2px solid #abb98d; /*Olive Green*/
-  margin: 2rem 0px;
+  margin: 1.25rem 0px;
 }
 /* END Misc */
 /* ---- END Additional  ---- */
@@ -269,13 +332,16 @@ hr {
   .navbar-brand {
     flex-direction: column;
   }
+  a.navbar-link {
+    padding-left: 0.75rem;
+  }
   .burger-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: -10px;
     margin: 0 auto;
-    background: #abb98d;
+    background: #97a27f;
     width: 45%;
     color: white;
   }
